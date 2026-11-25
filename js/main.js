@@ -10,6 +10,7 @@
   const $$ = (sel, el = document) => [...el.querySelectorAll(sel)];
 
   const TYPE_LABEL = { movie: "영화", drama: "드라마" };
+  const escapeHTML = s => String(s).replace(/[&<>"']/g, ch => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[ch]));
   const memberById = Object.fromEntries(TEAM.map(m => [m.id, m]));
 
   // 원본 데이터에 고유 번호 붙이기
@@ -282,6 +283,32 @@
     $("#modalReview").textContent = p.review;
     $("#modalBy").innerHTML = pickByHTML(p) + (m ? `<small>${m.role}</small>` : "");
     $("#modalRating").innerHTML = ratingHTML(p.rating);
+
+    // 마음에 들었던 점
+    const likes = Array.isArray(p.likes) ? p.likes : [];
+    $("#modalLikes").innerHTML = likes.length
+      ? likes.map(t => `<li>${escapeHTML(t)}</li>`).join("")
+      : `<li class="is-empty">아직 작성하지 않았어요.</li>`;
+
+    // 팀원 코멘트
+    const comments = Array.isArray(p.comments) ? p.comments : [];
+    $("#commentCount").textContent = comments.length ? comments.length : "";
+    $("#commentList").innerHTML = comments.length
+      ? comments.map(c => {
+          const cm = memberById[c.member];
+          return `
+            <li class="comment">
+              <span class="avatar avatar--md" aria-hidden="true">${cm ? cm.name.slice(0, 1) : "?"}</span>
+              <div class="comment__body">
+                <p class="comment__who"><strong>${cm ? cm.name : "팀원"}</strong>${cm ? `<small>${cm.role}</small>` : ""}</p>
+                <p class="comment__text">${escapeHTML(c.text || "")}</p>
+              </div>
+            </li>`;
+        }).join("")
+      : `<li class="comments__empty">아직 코멘트가 없어요. 첫 코멘트를 남겨 주세요!</li>`;
+    $(".modal__body", modal).scrollTop = 0;
+    $(".modal__comments", modal).scrollTop = 0;
+
     modal.hidden = false;
     document.body.classList.add("no-scroll");
     stopAuto();
@@ -326,6 +353,28 @@
   // 모바일 메뉴
   $("#menuBtn").addEventListener("click", () => document.body.classList.toggle("menu-open"));
   navLinks.forEach(a => a.addEventListener("click", () => document.body.classList.remove("menu-open")));
+
+  /* ---------- 커튼 인트로 ---------- */
+  const intro = $("#intro");
+  if (intro) {
+    const finishIntro = () => {
+      intro.remove();
+      document.body.classList.remove("intro-playing");
+    };
+    if (reduceMotion) {
+      finishIntro();
+    } else {
+      document.body.classList.add("intro-playing");
+      // 클릭하거나 아무 키나 누르면 바로 열기
+      const skip = () => intro.classList.add("is-skipped");
+      intro.addEventListener("click", skip);
+      document.addEventListener("keydown", skip, { once: true });
+      intro.addEventListener("animationend", e => {
+        if (e.target === intro) finishIntro();
+      });
+      setTimeout(finishIntro, 4000); // 혹시 몰라 4초 뒤에는 무조건 제거
+    }
+  }
 
   /* ---------- 시작 ---------- */
   // 시안처럼 처음엔 두 번째 작품(가운데 강조)부터 보여주고 싶다면 아래 숫자를 바꾸세요.

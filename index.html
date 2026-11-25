@@ -12,6 +12,17 @@
   <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
+  <!-- 첫 화면 커튼 열림 인트로 (클릭하면 바로 건너뛰기) -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro__curtain intro__curtain--left"></div>
+    <div class="intro__curtain intro__curtain--right"></div>
+    <div class="intro__valance"></div>
+    <div class="intro__logo">
+      <span>SAM<em>FLIX</em></span>
+      <small>TEAM 3 PRESENTS</small>
+    </div>
+  </div>
+
   <!-- 극장 커튼 장식 -->
   <div class="curtain curtain--left" aria-hidden="true"></div>
   <div class="curtain curtain--right" aria-hidden="true"></div>
@@ -145,14 +156,26 @@
       <button class="modal__close" data-close aria-label="닫기">✕</button>
       <div class="modal__poster" id="modalPoster"></div>
       <div class="modal__body">
-        <p class="modal__meta" id="modalMeta"></p>
-        <h3 class="modal__title" id="modalTitle"></h3>
-        <p class="modal__oneline" id="modalOneLine"></p>
-        <p class="modal__review" id="modalReview"></p>
-        <div class="modal__footer">
-          <span class="pick-by" id="modalBy"></span>
-          <span class="rating" id="modalRating"></span>
+        <div class="modal__info">
+          <p class="modal__meta" id="modalMeta"></p>
+          <h3 class="modal__title" id="modalTitle"></h3>
+          <p class="modal__oneline" id="modalOneLine"></p>
+          <div class="modal__byline">
+            <span class="pick-by" id="modalBy"></span>
+            <span class="rating" id="modalRating"></span>
+          </div>
+
+          <h4 class="modal__label">작품 소개</h4>
+          <p class="modal__review" id="modalReview"></p>
+
+          <h4 class="modal__label">마음에 들었던 점</h4>
+          <ul class="modal__likes" id="modalLikes"></ul>
         </div>
+
+        <section class="modal__comments" aria-labelledby="commentsTitle">
+          <h4 class="modal__label" id="commentsTitle">팀원 코멘트 <span id="commentCount"></span></h4>
+          <ul class="comments" id="commentList"></ul>
+        </section>
       </div>
     </div>
   </div>
