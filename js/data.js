@@ -39,7 +39,7 @@ const PICKS = [
   {
     title: "007 no time to die", type: "movie", member: "minseok",
     year: 2021, genre: "액션, 스릴러", rating: 4.8,
-    poster: "images/posters/007notimetodie.jpeg", theme: "galaxy",
+    poster: "images/posters/007notimetodie.jpeg",
     oneLine: "은퇴 후 평범한 삶을 살던 제임스 본드의 마지막 임무",
     review: "현역에서 은퇴해 평온한 삶을 살던 제임스 본드가 옛 CIA 동료의 부탁을 받고 납치된 과학자를 구출하기 위해 마지막 임무에 나서는 액션 블록버스터",
     likes: ["한스짐머의 환상적인 음악", "다니엘 크레이그의 007 은퇴작"],
