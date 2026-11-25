@@ -30,7 +30,7 @@
 const TEAM = [
   { id: "minseok", name: "민석", role: "웹 개발 총괄", intro: "잔잔하지만 오래 남는 이야기를 좋아해요." },
   { id: "sunpyo", name: "순표", role: "디자인", intro: "색감이 예쁜 영화라면 무조건 봅니다." },
-  { id: "jinwoo", name: "진우", role: "기획", intro: "비 오는 날 보기 좋은 작품 수집가." },
+  { id: "jinwoo", name: "진우", role: "기획", intro: "영화가 끝난 뒤에도 영화에서 헤어나오지 못하는 여운이 긴 영화를 선호해요. 또한 판타지 장르를 좋아합니다" },
   { id: "youngrok", name: "영록", role: "구조 설계", intro: "반전 있는 스릴러를 찾아다녀요." },
   { id: "jiwon", name: "지원", role: "디자인", intro: "정주행 각 나오는 드라마 담당." }
 ];
