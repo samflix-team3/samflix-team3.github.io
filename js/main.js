@@ -281,7 +281,7 @@
     $("#modalTitle").textContent = p.title;
     $("#modalOneLine").textContent = p.oneLine;
     $("#modalReview").textContent = p.review;
-    $("#modalBy").innerHTML = pickByHTML(p) + (m ? `<small>${m.role}</small>` : "");
+    $("#modalBy").innerHTML = pickByHTML(p);
     $("#modalRating").innerHTML = ratingHTML(p.rating);
 
     // 마음에 들었던 점
@@ -300,7 +300,7 @@
             <li class="comment">
               <span class="avatar avatar--md" aria-hidden="true">${cm ? cm.name.slice(0, 1) : "?"}</span>
               <div class="comment__body">
-                <p class="comment__who"><strong>${cm ? cm.name : "팀원"}</strong>${cm ? `<small>${cm.role}</small>` : ""}</p>
+                <p class="comment__who"><strong>${cm ? cm.name : "팀원"}</strong></p>
                 <p class="comment__text">${escapeHTML(c.text || "")}</p>
               </div>
             </li>`;
