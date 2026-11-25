@@ -37,12 +37,12 @@ const TEAM = [
 
 const PICKS = [
   {
-    title: "그날의 우주", type: "movie", member: "minseok",
-    year: 2024, genre: "로맨스 · SF", rating: 4.6,
+    title: "007 no time to die", type: "movie", member: "minseok",
+    year: 2021, genre: "액션, 스릴러", rating: 4.8,
     poster: "", theme: "galaxy",
-    oneLine: "별이 쏟아지던 밤, 두 사람이 나눈 마지막 약속.",
-    review: "예시 문구입니다. 이 작품을 추천하는 이유를 2~4문장 정도로 적어주세요. 어떤 장면이 기억에 남았는지, 누구에게 추천하고 싶은지 쓰면 좋아요.",
-    likes: ["예시: 마음에 들었던 장면이나 대사", "예시: 음악·연출·배우 연기 등"],
+    oneLine: "은퇴 후 평범한 삶을 살던 제임스 본드의 마지막 임무",
+    review: "현역에서 은퇴해 평온한 삶을 살던 제임스 본드가 옛 CIA 동료의 부탁을 받고 납치된 과학자를 구출하기 위해 마지막 임무에 나서는 액션 블록버스터",
+    likes: ["한스짐머의 환상적인 음악", "다니엘 크레이그의 007 은퇴작"],
     comments: [
       { member: "sunpyo", text: "저도 봤는데 진짜 좋았어요!" },
       { member: "jinwoo", text: "이번 주말에 꼭 볼게요 👀" }
