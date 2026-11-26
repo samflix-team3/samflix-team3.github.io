@@ -49,12 +49,12 @@ const PICKS = [
     ]
   },
   {
-    title: "작은 숲의 계절", type: "drama", member: "minseok",
-    year: 2023, genre: "힐링 · 일상", rating: 4.4,
-    poster: "", theme: "forest",
-    oneLine: "도시를 떠나 숲속 책방을 연 사람들의 사계절.",
-    review: "예시 문구입니다. 실제 작품 정보로 바꿔주세요.",
-    likes: ["예시: 마음에 들었던 장면이나 대사", "예시: 음악·연출·배우 연기 등"],
+    title: "Succession Season 2", type: "drama", member: "minseok",
+    year: 2019, genre: "드라마, 블랙 코미디", rating: 4.7,
+    poster: "images/posters/succession.jpeg", theme: "forest",
+    oneLine: "모든 것을 가진 자들의, 모든 것을 차지하기 위한 경쟁",
+    review: "화려한 부와 권력, 그 이면에 자리한 끝없는 욕망과 불신. 가족이라는 이름 아래 벌어지는 치밀한 권력 다툼과 인간의 본성을 날카롭게 그려낸 작품. 세련된 영상미와 냉소적인 대사, 클래식한 선율이 어우러져 현대의 셰익스피어적 비극을 완성한다.",
+    likes: ["니콜라스 브리텔의 우아하고도 비극적인 음악", "배우들의 압도적인 연기와 치밀한 심리 묘사", "올드머니 감성이 돋보이는 의상과 미장센"],
     comments: [
       { member: "jinwoo", text: "포스터부터 취향 저격이네요" },
       { member: "youngrok", text: "추천 감사합니다!" }
