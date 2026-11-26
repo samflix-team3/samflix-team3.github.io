@@ -37,12 +37,12 @@ const TEAM = [
 
 const PICKS = [
   {
-    title: "007 no time to die", type: "movie", member: "minseok",
+    title: "007 No Time to Die", type: "movie", member: "minseok",
     year: 2021, genre: "액션, 스릴러", rating: 4.8,
     poster: "images/posters/007notimetodie.jpeg",
-    oneLine: "은퇴 후 평범한 삶을 살던 제임스 본드의 마지막 임무",
-    review: "현역에서 은퇴해 평온한 삶을 살던 제임스 본드가 옛 CIA 동료의 부탁을 받고 납치된 과학자를 구출하기 위해 마지막 임무에 나서는 액션 블록버스터",
-    likes: ["한스짐머의 환상적인 음악", "다니엘 크레이그의 007 은퇴작"],
+    oneLine: "가장 인간적이었던 제임스 본드, 그의 마지막 임무.",
+    review: "화려한 액션과 세련된 미장센, 그리고 그 이면에 자리한 사랑과 희생. 다니엘 크레이그가 15년간 완성해 온 제임스 본드라는 인물의 가장 인간적이고도 아름다운 피날레. 한 시대의 끝을 이토록 낭만적으로 그려낼 수 있을까.",
+    likes: ["한스 짐머의 웅장하고도 서정적인 음악", "다니엘 크레이그의 007 은퇴작"],
     comments: [
       { member: "sunpyo", text: "저도 봤는데 진짜 좋았어요!" },
       { member: "jinwoo", text: "이번 주말에 꼭 볼게요 👀" }
