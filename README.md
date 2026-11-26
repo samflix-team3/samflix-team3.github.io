@@ -1,10 +1,5 @@
 # 🎬 SAMFLIX — Team 3 Movie & Drama Archive
 
-> 다섯 명의 취향이 모인, 열 편의 영화와 드라마
-
-3조 팀원 5명이 각자 영화·드라마를 2편씩 소개하는 웹사이트입니다.
-HTML / CSS / JavaScript만 사용해서 별도 설치 없이 바로 열 수 있어요.
-
 ## 📁 폴더 구조
 
 ```
@@ -21,27 +16,24 @@ samflix/
 1. `js/data.js` 를 엽니다.
 2. `TEAM` 에서 내 이름·역할·한 줄 소개를 고칩니다.
 3. `PICKS` 에서 `member` 가 내 id인 작품 2개를 찾아 제목, 연도, 장르, 별점, 소개를 바꿉니다.
-4. 포스터 이미지가 있으면 `images/posters/` 에 넣고 `poster: "images/posters/파일이름.jpg"` 로 적어주세요.
-   비워두면 `theme` 색감으로 임시 포스터가 그려집니다.
+4. 포스터 이미지가 있으면 `images/posters/` 에 넣고 `poster: "images/posters/파일이름.jpeg or jpg"` 로 적어주세요.
 
-> ⚠️ 쉼표(`,`)와 따옴표(`"`)를 지우지 않게 조심하세요! 하나만 빠져도 화면이 안 나와요.
+> ⚠️ 쉼표(`,`)와 따옴표(`"`)를 지우지 않게 조심. 혹시나 모를 상황을 대비하여 ctrl + a 통해 전체복사 후 메모장 넣어두기.
 
 ## 💻 내 컴퓨터에서 보기
 
-`index.html` 파일을 더블클릭하면 브라우저에서 바로 열립니다.
-(VS Code를 쓴다면 **Live Server** 확장으로 열면 저장할 때마다 자동 새로고침돼요.)
+`https://samflix-team3.github.io/` 해당 홈페이지 들어가심 됩니당
 
 ## 🌐 GitHub Pages로 배포하기
 
 1. GitHub 저장소 → **Settings** → **Pages**
 2. **Source**: `Deploy from a branch` / **Branch**: `main`, 폴더 `/ (root)` → **Save**
-3. 1~2분 뒤 `https://<깃허브아이디>.github.io/<저장소이름>/` 주소로 접속할 수 있어요.
+3. 1~2분 뒤 `https://<깃허브아이디>.github.io/<저장소이름>/` 주소로 접속가능.
 
 ## 🤝 협업 규칙 (추천)
 
 - 각자 `data.js` 의 **자기 작품 부분만** 수정하기 → 충돌(conflict) 방지
 - 작업 전에 항상 **Pull** 먼저 받기
-- 커밋 메시지 예시: `민준: 그날의 우주 소개글 추가`
 - 디자인 큰 변경은 브랜치를 따로 만들어 Pull Request로 올리기
 
 ## 기능
@@ -51,3 +43,5 @@ samflix/
 - 카드 클릭 시 상세 소개 팝업
 - PICKS(전체 목록), TEAM(팀원 소개), ABOUT 섹션
 - 모바일 화면 대응
+
+하다가 막히시면 연락주세요 (단톡방 이용)
