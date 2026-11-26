@@ -2,7 +2,7 @@
    SAMFLIX 데이터 파일
    ---------------------------------------------------------
    👉 팀원들은 이 파일만 고치면 사이트 내용이 바뀝니다!
-   지금 들어있는 내용은 전부 "예시"예요. 실제 이름·작품으로 바꿔주세요.
+   지금 들어있는 내용은 전부 "예시"예요. 실제 이름·작품으로 바꿔주세용.
 
    [작품 항목 설명]
    title    : 작품 제목
@@ -11,7 +11,7 @@
    year     : 개봉/방영 연도
    genre    : 장르
    rating   : 내 별점 (0.0 ~ 5.0)
-   poster   : 포스터 이미지 경로 (예: "images/posters/parasite.jpg")
+   poster   : 포스터 이미지 경로 (예: "images/posters/parasite.jpg or jpeg")
               비워두면("") 아래 theme 색감으로 임시 포스터가 그려져요.
    theme    : 임시 포스터 분위기
               galaxy / sunset / rain / forest / city / snow / ocean / neon / dawn / autumn
@@ -28,7 +28,7 @@
    ========================================================= */
 
 const TEAM = [
-  { id: "minseok", name: "민석", role: "웹 개발 총괄", intro: "잔잔하지만 오래 남는 이야기를 좋아해요." },
+  { id: "minseok", name: "민석", role: "웹 개발 총괄", intro: "세련된 연출을 좋아하고, 인간적인 서사에 매력을 느낍니다." },
   { id: "sunpyo", name: "순표", role: "디자인", intro: "색감이 예쁜 영화라면 무조건 봅니다." },
   { id: "jinwoo", name: "진우", role: "기획", intro: "영화가 끝난 뒤에도 영화에서 헤어나오지 못하는 여운이 긴 영화를 선호해요. 또한 판타지 장르를 좋아합니다" },
   { id: "youngrok", name: "영록", role: "구조 설계", intro: "반전 있는 스릴러를 찾아다녀요." },
