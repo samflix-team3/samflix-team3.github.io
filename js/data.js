@@ -168,7 +168,7 @@ const PICKS = [
   },
   {
     title: "나는 내일, 어제의 너를 만난다", type: "movie", member: "jiwon",
-    year: 2026, genre: "로맨스 · 판타지 · 멜로", rating: 4.7,
+    year: 2016, genre: "로맨스 · 판타지 · 멜로", rating: 4.7,
     poster: "images/posters/nanunnailajeinululbonda.jpg", theme: "dawn",
     oneLine: "시간이 반대로 흐르는 두 사람이 교차하는 단 한 번의 계절에서 마주하는 애틋한 사랑",
     review: "20세의 타카토시와 20세의 에미가 서로 정반대의 시간 축을 살아가며 30일마다 딱 한 번씩 마주하는 판타지 로맨스다. 처음엔 풋풋하고 설레는 첫사랑 이야기처럼 흘러가지만, 서로의 시간이 어긋나 있다는 진실이 드러나는 순간 모든 장면이 새로운 의미로 다가오며 깊은 여운과 먹먹함을 남긴다.",
